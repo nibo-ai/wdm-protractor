@@ -1,0 +1,12 @@
+# compiled output
+/dist
+/tmp
+/test
+/lib
+/documentation
+lib.tgz
+
+# dependencies
+/node_modules
+/node_modules*
+/bower_components

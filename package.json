@@ -1,0 +1,38 @@
+{
+    "name": "@nibo-ai/wdm-protractor",
+    "main": "src/index.ts",
+    "type": "module",
+    "version": "0.0.7",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nibo-ai/wdm-protractor.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepublish": "npm run build",
+        "start": "node --loader ts-node/esm ./src/index.ts"
+    },
+    "engines": {
+        "node": ">=12"
+    },
+    "bin": "dist/index.js",
+    "author": {
+        "name": "NudgeIT"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "find-chrome-version": "latest",
+        "node-fetch": "^3.2.6",
+        "ts-node": "latest",
+        "typescript": "latest"
+    },
+    "devDependencies": {
+        "@types/node-fetch": "latest"
+    },
+    "peerDependencies": {
+        "webdriver-manager": "^12.1.8"
+    }
+}
